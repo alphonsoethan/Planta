@@ -13,6 +13,7 @@
         <action
             android:id="@+id/action_splashFragment_to_signInFragment2"
             app:destination="@id/signInFragment"
+            app:enterAnim="@anim/from_right"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -23,11 +24,19 @@
         tools:layout="@layout/fragment_sign_in" >
         <action
             android:id="@+id/action_signInFragment_to_OTPFragment2"
+            app:enterAnim="@anim/from_right"
             app:destination="@id/OTPFragment" />
     </fragment>
     <fragment
         android:id="@+id/OTPFragment"
         android:name="com.android.project4.auth.OTPFragment"
         android:label="fragment_o_t_p"
-        tools:layout="@layout/fragment_o_t_p" />
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_OTPFragment_to_signInFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/signInFragment"
+            app:enterAnim="@anim/from_left"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
