@@ -28,8 +28,7 @@ class SignInFragment : Fragment() {
         getUserNumber()
         onContinueButtonClick()
         return binding.root
-        //return inflater.inflate(R.layout.fragment_sign_in, container, false)
-    }
+        }
 
     private fun onContinueButtonClick() {
         binding.btnContinue.setOnClickListener{

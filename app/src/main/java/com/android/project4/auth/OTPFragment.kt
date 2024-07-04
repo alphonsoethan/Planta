@@ -1,5 +1,6 @@
 package com.android.project4.auth
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -12,6 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.android.project4.R
 import com.android.project4.Utils
+import com.android.project4.activity.UsersMainActivity
 import com.android.project4.databinding.FragmentOTPBinding
 import com.android.project4.models.Users
 import com.android.project4.viewmodels.AuthViewModel
@@ -66,6 +68,8 @@ class OTPFragment : Fragment() {
                 if (it){
                     Utils.hideDialog()
                     Utils.showToast(requireContext(), "Logged In")
+                    startActivity(Intent(requireActivity() , UsersMainActivity::class.java))
+                    requireActivity().finish()
                 }
             }
         }

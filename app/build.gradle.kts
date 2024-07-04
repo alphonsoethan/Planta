@@ -73,5 +73,4 @@ dependencies {
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.messaging.ktx)
 
-
 }
