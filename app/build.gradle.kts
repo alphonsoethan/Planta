@@ -36,6 +36,7 @@ android {
     }
     buildFeatures{
         viewBinding = true
+        mlModelBinding = true
     }
 }
 
@@ -46,6 +47,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.metadata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,4 +76,15 @@ dependencies {
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.messaging.ktx)
 
+    //image Slider
+    implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
+    //Shimmer Effect
+    implementation("com.facebook.shimmer:shimmer:0.5.0@aar")
+
+    //Tensor flow
+    implementation (libs.org.tensorflow.tensorflow.lite)
+    implementation (libs.tensorflow.lite.support.v020)
+    implementation (libs.tensorflow.lite.metadata)
+    implementation (libs.tensorflow.lite.gpu)
 }

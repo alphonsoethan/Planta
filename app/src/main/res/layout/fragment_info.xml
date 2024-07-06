@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Plant Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/etProductTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zebra Haworthia"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Scientific Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scientific Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/etScientificName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haworthiopsis attenuata"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Species -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Species"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="H. attenuata"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Family -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asphodelaceae"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Zebra Haworthia is a charming succulent plant known for its striking, white-striped leaves that resemble the pattern of a zebra. The plant is small and compact, usually growing up to 5 inches tall. Its rosettes of fleshy, dark green leaves with white tubercles make it an attractive addition to any indoor plant collection."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Care Instructions -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Care Instructions"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/etLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prefers bright, indirect light but can tolerate low light conditions. Avoid direct sunlight as it can scorch the leaves.\n\n"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+            <TextView
+                android:id="@+id/tvCareInstructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Light: Prefers bright, indirect light but can tolerate low light conditions. Avoid direct sunlight as it can scorch the leaves.\n\nWater: Water moderately when the soil is dry. Overwatering can lead to root rot. In winter, reduce watering to once a month.\n\nSoil: Thrives in well-draining succulent or cactus mix.\n\nTemperature: Ideal temperature range is 65-80°F (18-27°C). Protect from frost and cold drafts.\n\nHumidity: Prefers low to moderate humidity. Can tolerate average household humidity levels.\n\nFertilizer: Feed with a balanced, water-soluble fertilizer diluted to half strength once a month during the growing season (spring and summer)."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Precautions -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precautions"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvPrecautions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toxicity: Non-toxic to pets and humans.\n\nPests/Diseases: Susceptible to mealybugs and spider mites. Can develop root rot if overwatered. Treat pests with insecticidal soap and avoid overwatering to prevent root rot.\n\nSpecial Notes: Remove dead or yellowing leaves to maintain appearance and health."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Variants -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Variants"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvVariants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haworthiopsis attenuata 'Concolor': Features more evenly spaced white spots on its leaves.\n\nHaworthiopsis attenuata 'Big Band': Known for its larger size and more pronounced white bands.\n\nHaworthiopsis attenuata 'Crazed Glaze': Has a unique pattern of white tubercles that appear more scattered."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Fun Facts -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fun Facts"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvFunFacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Zebra Haworthia is often mistaken for its close relative, the Aloe plant, but it's much smaller in size.\n\nThis plant is a slow grower and can live for many years with proper care."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="8dp"
+                android:background="@drawable/textview_background"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

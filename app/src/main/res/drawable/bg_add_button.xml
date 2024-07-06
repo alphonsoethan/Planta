@@ -1,0 +1,35 @@
+<!-- res/drawable/custom_button.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="16dp" />
+            <gradient
+                android:startColor="#FF6F00"
+                android:endColor="#FFA000"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#FF6F00" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="16dp" />
+
+            <stroke
+                android:width="2dp"
+                android:background="#DDDDDD"
+                android:color="@color/green" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+</selector>

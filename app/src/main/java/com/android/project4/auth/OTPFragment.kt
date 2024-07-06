@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -59,8 +60,8 @@ class OTPFragment : Fragment() {
     }
 
     private fun verifyOtp(otp: String) {
-        val user = Users(uid = Utils.getCurrentUserId() , userPhoneNumber = userNumber , userAddress = null)
-
+        val user = Users(uid = "dut7a6e" , userPhoneNumber = userNumber , userAddress = "ABC")
+        Log.d("OTP ERROR", "verifyOtp: " + user.uid + " " + user.userPhoneNumber +" " + user.userAddress);
         viewModel.signInWithPhoneAuthCredential(otp,userNumber,user)
 
         lifecycleScope.launch {

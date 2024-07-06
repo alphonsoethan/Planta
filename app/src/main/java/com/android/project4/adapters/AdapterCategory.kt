@@ -1,15 +1,16 @@
 package com.android.project4.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.android.project4.databinding.ItemViewProductCategoryBinding
 import com.android.project4.models.Category
+import kotlin.reflect.KFunction0
 
-class AdapterCategory (
-    val categoryList : ArrayList<Category>
+class AdapterCategory(
+    val categoryList: ArrayList<Category>,
+    val onCategoryIconClicked:(Category) -> Unit
 ) :RecyclerView.Adapter<AdapterCategory.CategoryViewHolder>() {
     class CategoryViewHolder (val binding: ItemViewProductCategoryBinding) : ViewHolder(binding.root)
 
@@ -26,6 +27,9 @@ class AdapterCategory (
         holder.binding.apply {
             ivCategoryImage.setImageResource(category.Image)
             tvCategoryTitle.text = category.title
+        }
+        holder.itemView.setOnClickListener {
+            onCategoryIconClicked(category)
         }
     }
 
