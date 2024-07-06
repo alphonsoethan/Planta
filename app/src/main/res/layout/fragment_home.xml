@@ -62,7 +62,8 @@
                         android:padding="10dp"
                         android:textSize="@dimen/_15ssp"
                         android:textColorHint="@color/black"
-                        app:drawableStartCompat="@drawable/baseline_search_24"/>
+                        app:drawableStartCompat="@drawable/baseline_search_24"
+                        tools:ignore="HardcodedText" />
 
                 </com.google.android.material.card.MaterialCardView>
                 
@@ -93,13 +94,14 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:text="Favourites"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
             </LinearLayout>
 
@@ -153,14 +155,15 @@
                 app:layout_constraintTop_toBottomOf="@id/llCategories">
 
 
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="370sp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/app_icon"
+                        android:layout_marginTop="10sp" >
+                    </ImageView>
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="370sp"
-                    android:layout_margin="10dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10sp" />
 
                 <Button
                     android:layout_width="match_parent"
